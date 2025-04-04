@@ -233,7 +233,7 @@
 .arkaplan {
     margin-top: 10rem;
     margin-bottom: 5rem;
-    background-image: url("/assets/ekipfoto.jpg");
+    background-image: url("assets/ekipfoto.jpg");
     width: 100%;
     height: 50vh;
     background-size: cover;
