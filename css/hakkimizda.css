@@ -13,7 +13,7 @@ body {
 }
 
 .kapak {
-    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('https://berke-yay.github.io/codeAcademyFinalProject/css/assets/resima.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('https://berke-yay.github.io/codeAcademyFinalProject/assets/resima.png') center/cover no-repeat;
     color: white;
     text-align: left;
     padding: 180px 60px;
