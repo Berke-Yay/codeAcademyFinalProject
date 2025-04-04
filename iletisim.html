@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletisim</title>
+    <link rel="shortcut icon" href="assets/insiderlogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/iletisim.css">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!--navbar başlangıcı-->
+    <nav>
+        <a href="index.html">
+            <span>Group Portfolio</span>
+        </a>
+
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="navbar-list">
+            <a href="hakkimizda.html" data-i18n="about">About Us</a>
+            <a href="projects.html" data-i18n="projects">Projects</a>
+            <a href="iletisim.html" data-i18n="contact">Contact</a>
+            <i class="fa-solid fa-sun" id="theme-icon" onclick="changeTheme()"></i>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="createNavbarDropdown()"><img src="assets/turkey.png"> <i class="fa-solid fa-caret-down"></i></button>
+                <div id="navbar-dropdown" class="dropdown-content">
+                    <a data-lang="tr"><img src="assets/turkey.png">Türkçe</a>
+                    <a data-lang="en"><img src="assets/united-kingdom.png">English</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--navbar bitişi-->
+
+    <!--iletişim hero kısmı baslangıcı-->
+    <section class="iletisim-hero">
+        <h1 data-i18n="iletisimHeroH1">Bize Ulaşın</h1>
+        <p data-i18n="iletisimHeroP">Herhangi bir sorunuz ya da öneriniz mi var? Size yardımcı olmak için buradayız! Aşağıdaki formu doldurarak
+            bizimle hızlıca iletişime geçebilirsiniz. </p>
+    </section>
+    <!--iletişim hero kısmı bitişi-->
+
+    <!--form bilgi kısmı baslangıc-->
+    <div class="baslik">
+        <h1 data-i18n="iletisimFormuH1">İletişim Formu</h1>
+        <div class="cizgi"></div>
+    </div>
+
+    <section class="form-kapsayici">
+
+        <section class="form-alani">
+            <form   action="https://formspree.io/f/xqapygpe" method="POST">
+                <input type="text" placeholder="Ad Soyad / Name Surname" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="tel" placeholder="Telefon / Phone: 5XXXXXXXXX" name="phone"  pattern="[0-9]{10}" required>
+                <textarea placeholder="Mesajınızı yazın / Write your message" name="message"></textarea>
+                <button data-i18n="submitBtn">Gönder</button>
+            </form>
+        </section>
+
+        <div class="form-img">
+            <img src="assets/form-kart.jpg" alt="">
+        </div>
+
+    </section>
+    <!--form bilgi kısmı bitişi-->
+
+    <!--kayıt formu ve bağlantılar baslangıcı-->
+    <section class="bizekatilin">
+
+        <div class="linkler">
+            <h2 data-i18n="linklerH2">Sosyal Medya Hesaplarımız</h2>
+            <p data-i18n="linklerP">Bizimle bağlantı kurun! Sosyal medya hesaplarımızdan ekibimizin çalışmalarını takip edebilir,
+                projelerimiz hakkında bilgi alabilir ve bize ulaşabilirsiniz. </p>
+            <div class="sosyalmedya">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
+                <a href="#"><i class="fa-brands fa-github"></i> </a>
+                <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+            </div>
+        </div>
+
+        <div class="form-kart">
+            <h3 data-i18n="kayitFormH3">Kayıt Formu</h3>
+            <p data-i18n="kayitFormP">Yeni güncellemeler ve gelişmelerden haberdar olmak için haftalık Email bültenimize kayıt olun.</p>
+            <form   action="https://formspree.io/f/xpwpyopo" method="POST">
+                <input type="email" placeholder="Email" name="email" required>
+                <button data-i18n="submitBtn">Gönder</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--kayıt formu ve bağlantılar bitişi-->
+
+
+
+    <!--Kısa bilgi kartları baslangıcı-->
+    <section class="bilgi-kartlari">
+
+        <div class="kart">
+            <i class="fas fa-phone"></i>
+            <p>(+90) 555 555 55 55</p>
+            <p>(+90) 777 777 77 77</p>
+        </div>
+
+        <div class="kart">
+            <i class="fas fa-envelope"></i>
+            <p>Teams@gmail.com</p>
+            <p>Teams12@gmail.com</p>
+        </div>
+
+        <div class="kart">
+            <i class="fas fa-map-marker-alt"></i>
+            <p> Libadiye Sok., 3, İstanbul, Kağıthane, Sultan Selim Mah.</p>
+
+        </div>
+    </section>
+
+    <!--Kısa bilgi kartları bitişi-->
+
+    <!--footer kısmı başlangıcı-->
+    <footer>
+        <div class="footer-content">
+          <div>
+            <span>Group Portfolio</span>
+            <p data-i18n="motto">İnsanlara faydalı olmak için çabala çünkü buna değer.</p>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="links">Quick Links</span>
+            <ul>
+              <li><a href="index.html" data-i18n="home">Home Page</a></li>
+              <li><a href="hakkimizda.html" data-i18n="about">About Us</a></li>
+              <li><a href="projects.html" data-i18n="projects">Projects</a></li>
+              <li><a href="iletisim.html" data-i18n="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="contactInfo">Contact Information</span>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> &nbsp Libadiye Sok. No:3, Kağıthane/İstanbul</li>
+              <li><i class="fa-solid fa-phone"></i> &nbsp +90 555 555 55 55</li>
+              <li><i class="fa-solid fa-envelope"></i> &nbsp groupname@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="rights" data-i18n="rights">© 2025 Group Portfolio. All rights reserved.</div>
+      </footer>
+    <!--footer kısmı bitiş-->
+
+    <script src="js/global.js"></script>
+</body>
+
+</html>

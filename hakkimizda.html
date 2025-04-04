@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/insiderlogo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hakkimizda.css">
+    
+    <title>Hakkımızda</title>
+</head>
+<body>
+    <!--navbar başlangıcı-->
+    <nav>
+        <a href="index.html">
+            <span>Group Portfolio</span>
+        </a>
+
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="navbar-list">
+            <a href="hakkimizda.html" data-i18n="about">About Us</a>
+            <a href="projects.html" data-i18n="projects">Projects</a>
+            <a href="iletisim.html" data-i18n="contact">Contact</a>
+            <i class="fa-solid fa-sun" id="theme-icon" onclick="changeTheme()"></i>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="createNavbarDropdown()"><img src="assets/turkey.png"> <i class="fa-solid fa-caret-down"></i></button>
+                <div id="navbar-dropdown" class="dropdown-content">
+                    <a data-lang="tr"><img src="assets/turkey.png">Türkçe</a>
+                    <a data-lang="en"><img src="assets/united-kingdom.png">English</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--navbar bitişi-->
+
+    <section class="kapak">
+        <div class="kapak-icerik">
+            <h1 data-i18n="kapakIcerikH1">Merhaba, Biz [Grup İsmi]</h1>
+            <p data-i18n="kapakIcerikP">Yazılım ve teknolojinin milyarlarca insanın hayatına dokunduğu günümüzde biz de çorbada tuzumuz olsun istiyor, her geçen gün yeni beceriler kazanmaya ve projeler geliştirmeye devam ediyoruz.</p>
+        </div>
+    </section>
+
+    <section class="ekip">
+        <h2 data-i18n="ekipH2">Ekip Üyeleri</h2>
+        <div class="ekip-kapsayici">
+            <div class="ekip-uye">
+                <img src="assets/mirac.png" alt="Miraç Cem Çelebi">
+                <h3>Miraç Cem Çelebi</h3>
+                <p class="rol">UX Designer</p>
+                <p data-i18n="miracP">Figma, Photoshop C#, HTML, CSS ve JS biliyorum.</p>
+            </div>
+            <div class="ekip-uye">
+                <img src="assets/Egemen.jpg" alt="Egemen">
+                <h3>Egemen Ercan</h3>
+                <p class="rol">Full Stack Developer</p>
+                <p data-i18n="egemenP">JS, Python, Java, R, PHP, Node.js ve MySQL biliyorum.</p>
+            </div>
+            <div class="ekip-uye">
+                <img src="assets/merve.png" alt="Merve Demirci">
+                <h3>Merve Demirci</h3>
+                <p class="rol">Front End Developer</p>
+                <p data-i18n="merveP">PHP, C#, ASP, HTML, CSS ve JS gibi yazılım dillerine hakimim.</p>
+            </div>
+            <div class="ekip-uye">
+                <img src="assets/Berke_Yay.png" alt="Berke">
+                <h3>Berke Yay</h3>
+                <p class="rol">Back End Developer</p>
+                <p data-i18n="berkeP">Python Tensorflow, Java Spring ve Next Javascript ile çalışıyorum.</p>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="timeline-h2" data-i18n="timelineH2">Hikâyemiz</h2>
+    <section class="timeline-container">
+        <div class="timeline-item right">
+            <h2 data-i18n="timelineItem1H2">Code Academy Başlangıcı</h2>
+            <p data-i18n="timelineItem1P">Dördümüzün bir araya gelişi ilk kez Code Academy ile birlikte oldu.</p>
+        </div>
+    
+        <div class="timeline-item left">
+            <h2 data-i18n="timelineItem2H2">Eğitim</h2>
+            <p data-i18n="timelineItem2P">Geçtiğimiz haftalarda yazılımdan insan ilişkilerine, zaman yönetiminden İspanya mutfağına kadar pek çok konuda bilgi edinme fırsatı bulduk.</p>
+        </div>
+    
+        <div class="timeline-item right">
+            <h2 data-i18n="timelineItem3H2">Mezuniyet</h2>
+            <p data-i18n="timelineItem3P">Mezuniyet haftası öncesi grubumuzla buluştuk, bazı noktalarda zorlansak da birlikte çalışıp bu portfolyo sitesini geliştirdik.</p>
+        </div>
+    
+        <div class="timeline-item left">
+            <h2 data-i18n="timelineItem4H2">Sırada</h2>
+            <p data-i18n="timelineItem4P">Artık yazılım öğrenme yolculuklarımızda bir üst seviyeye geçmenin ve yeni teknolojileri deneme vakti geldi.</p>
+        </div>
+    </section>
+
+    <section class="see-projects-section">
+        <img src="assets/hakkimizda-img.avif">
+        <div class="what-we-did">
+            <h2 data-i18n="seeProjectsH2">Şimdiye Kadar Neler Yaptık?</h2>
+            <p data-i18n="seeProjectsP">Bugüne kadar yapmış olduğumuz projelerden oluşan portfolyo sayfamızı inceleyin.</p>
+            <a data-i18n="seeProjectsA" href="projects.html">Projeler <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+    </section>
+
+    <section class="iletisim">
+        <h2 data-i18n="iletisimH2">Herhangi Bir Sorununuz Var Mı?</h2>
+        <a data-i18n="iletisimA" href="iletisim.html" class="iletisim-dugme">Bize Ulaşın</a>
+    </section>
+
+    <!--footer kısmı başlangıcı-->
+    <footer>
+        <div class="footer-content">
+          <div>
+            <span>Group Portfolio</span>
+            <p data-i18n="motto">İnsanlara faydalı olmak için çabala çünkü buna değer.</p>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="links">Quick Links</span>
+            <ul>
+              <li><a href="index.html" data-i18n="home">Home Page</a></li>
+              <li><a href="hakkimizda.html" data-i18n="about">About Us</a></li>
+              <li><a href="projects.html" data-i18n="projects">Projects</a></li>
+              <li><a href="iletisim.html" data-i18n="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="contactInfo">Contact Information</span>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> &nbsp Libadiye Sok. No:3, Kağıthane/İstanbul</li>
+              <li><i class="fa-solid fa-phone"></i> &nbsp +90 555 555 55 55</li>
+              <li><i class="fa-solid fa-envelope"></i> &nbsp groupname@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="rights" data-i18n="rights">© 2025 Group Portfolio. All rights reserved.</div>
+      </footer>
+    <!--footer kısmı bitiş-->
+
+    <script src="js/global.js"></script>
+</body>
+</html>

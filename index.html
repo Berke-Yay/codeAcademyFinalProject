@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana sayfa</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="assets/insiderlogo.jpg" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--navbar başlangıcı-->
+    <nav>
+        <a href="index.html">
+            <span>Group Portfolio</span>
+        </a>
+
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="navbar-list">
+            <a href="hakkimizda.html" data-i18n="about">About Us</a>
+            <a href="projects.html" data-i18n="projects">Projects</a>
+            <a href="iletisim.html" data-i18n="contact">Contact</a>
+            <i class="fa-solid fa-sun" id="theme-icon" onclick="changeTheme()"></i>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="createNavbarDropdown()"><img src="assets/turkey.png"> <i class="fa-solid fa-caret-down"></i></button>
+                <div id="navbar-dropdown" class="dropdown-content">
+                    <a data-lang="tr"><img src="assets/turkey.png">Türkçe</a>
+                    <a data-lang="en"><img src="assets/united-kingdom.png">English</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--navbar bitişi-->
+
+
+
+    <!--hero  başlangıcı-->
+
+    <section class="hero">
+        <div class="image-container">
+            <img src="assets/ekipfoto.jpg" alt="ekipfoto">
+        </div>
+        <div class="content">
+            <h1 data-i18n="heroH1">Dijitali Tasarlıyor, <span class="renk">Geleceği</span> Kodluyoruz</h1>
+            <p data-i18n="heroP">Biz, yenilikçi düşünceyi güçlü yazılımla buluşturan 4 kişilik bir ekibiz.
+                Her satır kodda mükemmelliği, her tasarımda estetiği ön planda tutarak dijital dünyaya değer
+                katıyoruz.</p>
+
+                <a data-i18n="heroBlackBtn" href="hakkimizda.html" class="black-btn">Daha Fazlası →</a>
+                <a data-i18n="heroWhiteBtn" href="iletisim.html" class="white-btn">Bize katılın</a>
+        </div>
+    </section>
+
+    <!--hero bitişi-->
+
+
+
+    <!--proje kartları baslangıcı-->
+    <section class="projects-section">
+
+        <div class="baslik">
+            <h2 data-i18n="projectsH1">Projelerimiz</h2>
+            <p data-i18n="baslikP">
+                Becerilerimizi ve yaratıcılığımızı sergileyen çalışmalarımızdan bazılarını keşfedin.</p>
+            <div class="cizgi"></div>
+        </div>
+
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="assets/dragon-game.jpg" alt="">
+                <div class="project-info">
+                    <h3 data-i18n="dragonSpan">Rol Yapma Oyunu</h3>
+                    <p data-i18n="dragonP">Cebinde 100 altının, elinde bir sopan, içindeyse bir kahramanın yüreği var. Kaynaklarını akıllıca yönet, silahlarını güçlendir ve oyunun sonunda seni bekleyen korkunç ejderhayı alt et. Tabi tüm bunları yaparken aynı zamanda hayatta kalmaya da özen göstermelisin.</p>
+                    <a data-i18n="more" href="projects.html">Daha Fazlası →</a>
+                </div>
+                
+            </div>
+
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="assets/hesapmakinesi.jpg" alt="">
+                    <div class="project-info">
+                        <h3 data-i18n="calculatorSpan">Hesap Makinesi</h3>
+                        <p data-i18n="calculatorP">Toplama, çıkarma, çarpma ve bölme. Tüm bu işlemlerle tek başına uğraşmak istemiyorsan geliştirdiğimiz hesap makinesine bir göz atabilirsin. Üstelik üslü sayı hesaplama ve trigonometrik fonksiyonlar da var.</p>
+                        <a data-i18n="more" href="projects.html">Daha Fazlası →</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="assets/taşkagıtmakas.jpg" alt="">
+                    <div class="project-info">
+                        <h3 data-i18n="rpsSpan">Taş Kağıt Makas</h3>
+                        <p data-i18n="rpsP">Herkesin bildiği o klasik oyun, artık dijitalde. Bilgisayara karşı oynarken şansını ve sezgilerini test et, üç olan kazanır. Seçimini akıllıca yap.</p>
+                        <a data-i18n="more" href="projects.html">Daha Fazlası →</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/todo-app-img.webp" alt="">
+                <div class="project-info">
+                    <h3 data-i18n="todoSpan">Yapılacaklar Listesi</h3>
+                    <p data-i18n="todoP">Tamamlamanız gereken tüm görevleri bu uygulama sayesinde organize ve takip edebilirsiniz. Plansızlıktan veya fiziksel bir ajanda tutmaktan yorulanlar için birebir.</p>
+                    <a data-i18n="more" href="projects.html">Daha Fazlası →</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="allprojects-btn"> <a data-i18n="allProjectsBtn" href="projects.html">Tüm Projeler</a></div>
+    <!--proje kartları bitişi-->
+
+
+    <!--geçiş-->
+    <div class="arkaplan"></div>
+    <!--geçiş-->
+
+
+    <!--neler öğrendik kısmı başlangıcı-->
+    <section class="container">
+        <div class="baslik">
+            <h2 data-i18n="whatWeLearnedH2"> Neler Öğrendik?</h2>
+            <div class="cizgi"></div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="ikon"><i class="fa-solid fa-star"></i></div>
+                <h3 data-i18n="card1H3">Kendini Geliştirme</h3>
+                <p data-i18n="card1P">Proje boyunca bazı kısımlarda zorlandık ama bunların hepsini yeni bir bilgi öğrenme fırsatı olarak gördük ve kendimizi proje tamamlanıncaya kadar sürekli geliştirdik. Bir bakıma öğrenmeyi ve araştırmayı da öğrendik.</p>
+            </div>
+            <div class="card">
+                <div class="ikon"><i class="fa-solid fa-people-group"></i></div>
+                <h3 data-i18n="card2H3">Ekip Çalışması</h3>
+                <p data-i18n="card2P"> Görev dağılımından anlamadığımız veya tıkandığımız noktalarda birbirimize destek olmaya kadar ekip olarak uyum içinde çalışmasak bu projeyi tamamlamamız mümkün olmazdı.</p>
+            </div>
+            <div class="card">
+                <div class="ikon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3 data-i18n="card3H3">Açık Görüşlülük </h3>
+                <p data-i18n="card3P"> Projenin geliştirilmesi sırasında tasarım veya kodlama kısmında fikir ayrılıkları yaşadığımız da oldu. Birbirlerimizin fikirlerine saygıyla yaklaşıp ekip için en yararlı olacak kararları vermeye çalıştık.</p>
+            </div>
+            <div class="card">
+                <div class="ikon"><i class="fa-solid fa-calendar-days"></i></div>
+                <h3 data-i18n="card4H3">Planlı Olmak</h3>
+                <p data-i18n="card4P">Bu proje, verilen uzun ve zorlu bir görevin düzgün bir planla parçalara ayrıldıktan sonra nasıl daha etkili ve kolay yapılabildiğini fark etmemizi sağladı. Şüphesiz ki dinamik programlama sorularından öğrenilecek çok şey var.</p>
+            </div>
+
+        </div>
+    </section>
+    <!--neler öğrendik kısmı bitişi-->
+
+    <!--footer kısmı başlangıcı-->
+    <footer>
+        <div class="footer-content">
+          <div>
+            <span>Group Portfolio</span>
+            <p data-i18n="motto">İnsanlara faydalı olmak için çabala çünkü buna değer.</p>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="links">Quick Links</span>
+            <ul>
+              <li><a href="index.html" data-i18n="home">Home Page</a></li>
+              <li><a href="hakkimizda.html" data-i18n="about">About Us</a></li>
+              <li><a href="projects.html" data-i18n="projects">Projects</a></li>
+              <li><a href="iletisim.html" data-i18n="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <span data-i18n="contactInfo">Contact Information</span>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> &nbsp Libadiye Sok. No:3, Kağıthane/İstanbul</li>
+              <li><i class="fa-solid fa-phone"></i> &nbsp +90 555 555 55 55</li>
+              <li><i class="fa-solid fa-envelope"></i> &nbsp groupname@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="rights" data-i18n="rights">© 2025 Group Portfolio. All rights reserved.</div>
+      </footer>
+    <!--footer kısmı bitiş-->
+
+    <script src="js/global.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+:root{
+  --card-bg: #f2f2f3;
+  --grey-text: #515A68;
+}
+
+[data-theme="dark"]{
+  --card-bg: #1F2937;
+  --grey-text: #9BA3AF;
+}
+
+.introduction-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction-section h1{
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.introduction-section span{
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.introduction-section hr{
+  width: 60%;
+  border-bottom: 3px solid black;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 0;
+}
+
+/*Projects Section*/
+.projects-section{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 12px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  position: relative;
+  min-height: 100%;
+}
+
+.project > img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project > span{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 12px 0;
+}
+
+.project > p{
+    color: var(--grey-text);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-bottom: 24px;
+    margin-bottom: 48px;
+    flex-grow: 1;
+}
+
+.project > a {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 12px 16px;
+  background-color: #4F45E4;
+  border-radius: 24px;
+  color: white;
+  font-size: 0.8rem;
+  width: auto;
+  text-align: center;
+  margin-top: auto;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+dialog > i{
+    padding: 6px 8px;
+}
+
+dialog > i:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+  .introduction-section h1{
+    font-size: 1.75rem;
+  }
+
+  .introduction-section span{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .introduction-section hr{
+    width: 90%;
+  }
+
+  .project{
+    width: 80%;
+  }
+}

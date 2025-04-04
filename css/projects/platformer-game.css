@@ -1,0 +1,84 @@
+/*Platformer Game*/
+:root {
+    --main-bg-color: #0a0a23;
+    --section-bg-color: #ffffff;
+    --golden-yellow: #feac32;
+  }
+  
+  #platformer-game-dialog{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 120%;
+  }
+  
+  #platformer-game-dialog i{
+    color: white;
+  }
+  
+  #platformer-game-dialog i:hover{
+    color: black;
+    background-color: white;
+  }
+  
+  #platformer-game-dialog .start-screen {
+    background-color: var(--section-bg-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 20px;
+    padding-bottom: 5px;
+    width: 70%;
+  }
+  
+  #platformer-game-dialog .main-title {
+    text-align: center;
+  }
+  
+  #platformer-game-dialog .instructions {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px;
+    line-height: 2rem;
+  }
+  
+  #platformer-game-dialog .btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: #0a0a23;
+    font-size: 18px;
+    background-color: var(--golden-yellow);
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border-color: var(--golden-yellow);
+    border-width: 3px;
+  }
+  
+  #platformer-game-dialog .btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+  }
+  
+  #platformer-game-dialog .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #platformer-game-dialog .checkpoint-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--section-bg-color);
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+  }
+  
+  #platformer-game-dialog #canvas {
+    display: none;
+  }

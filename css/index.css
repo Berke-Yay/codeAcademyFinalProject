@@ -1,0 +1,381 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');*/
+
+:root{
+    --card-bg: white;
+    --grey-text: #515A68;
+    --normal-blue: #1865d8;
+    --hey: #007bff;
+}
+
+[data-theme="dark"]{
+    --card-bg: #1F2937;
+    --grey-text: #9BA3AF;
+}
+
+/*hero  başlangıcı*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 50px;
+
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    width: 40%;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.content h1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--accent-color);
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes reveal {
+    from { clip-path: inset(0 100% 0 0); opacity: 1;}
+    to { clip-path: inset(0 0 0 0); opacity: 1;}
+}
+
+.content h1 {
+    animation: reveal 3s steps(40) 1s forwards;
+}
+
+.renk {
+    color: var(--dark-blue);
+}
+
+.content p{
+    margin: 28px 0;
+    font-size: 1.05rem;
+    line-height: 2rem;
+    color: var(--grey-text);
+}
+
+.black-btn,
+.white-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.black-btn {
+    background: black;
+    color: white;
+}
+
+.black-btn:hover {
+    background: #2F2F31;
+}
+
+.white-btn {
+    background: white;
+    color: #000;
+    border: 1px solid rgb(122, 122, 122);
+}
+
+.white-btn:hover {
+    background: #F4F4F5;
+}
+
+/*hero  bitişi*/
+
+/* proje kartları kısmı baslangıcı*/
+
+.projects-section h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.projects-section p{
+    margin: 16px 0;
+    font-style: italic;
+    color: var(--grey-text);
+}
+
+.cizgi {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: 50%;
+    border: 2px solid var(--dark-blue);
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+    animation: expandHr 1.2s ease-out forwards;
+}
+
+@keyframes expandHr {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.171);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); background-color: #d3d3d3b7;
+}
+
+.project-card img {
+    width: 100%;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0; 
+
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 150px);
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: var(--grey-text);
+    flex-grow: 1;
+    margin: 10px 0 15px;
+}
+
+.project-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+.allprojects-btn {
+    margin: 3rem;
+    text-align: center;
+}
+
+.allprojects-btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid rgb(228, 228, 228);
+    cursor: pointer;
+    user-select: none;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color:#0e447e;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.allprojects-btn a:hover {
+    color:#ffffff;
+    background-color: #104e91ec;
+}
+
+/* proje kartları bitişi */
+
+/*geçiş kısmı*/
+.arkaplan {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    background-image: url("../assets/ekipfoto.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/*geçiş kısmı*/
+
+
+/*deneyimler kısmı başlangıcı*/
+
+
+.container {
+    padding: 50px 20px;
+}
+
+.baslik {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    gap: 15px; 
+}
+
+.ikon {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    background: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-right: 0; 
+    margin-bottom: 10px; 
+}
+
+.card h3 {
+    padding-top: 0; 
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--grey-text);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.baslik h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cizgi {
+    width: 60px;
+    height: 3px;
+    background: #1865d8;
+    margin: 0 auto 30px;
+    animation: expandHr 1s ease-out forwards;
+}
+
+.card:hover .ikon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/*deneyimler kısmı bitişi*/
+
+@media only screen and (max-width: 900px){
+    .hero{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image-container{
+        width: 80%;
+    }
+    .content {
+        width: 80%;
+    }
+    .cizgi{
+        width: 80%;
+    }
+    @keyframes expandHr {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .hero{
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .image-container{
+        width: 90%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content p{
+        margin: 16px 0;
+        font-size: 1rem;
+    }
+
+    .projects-section h2{
+        margin-top: 60px;
+    }
+}

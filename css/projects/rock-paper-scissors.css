@@ -1,0 +1,81 @@
+/*Rock, Paper, Scissors*/
+:root {
+  --very-dark-blue: #0a0a23;
+  --white: #ffffff;
+  --yellow: #f1be32;
+  --golden-yellow: #feac32;
+}
+
+#rock-paper-scissors-dialog h1 {
+  margin: 15px 0 20px;
+}
+
+#rock-paper-scissors-dialog .btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: var(--very-dark-blue);
+  background-color: var(--golden-yellow);
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border-color: var(--golden-yellow);
+  border-width: 3px;
+}
+
+#rock-paper-scissors-dialog .btn:hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+#rock-paper-scissors-dialog .rules-container {
+  padding: 10px 8px;
+  margin: auto;
+  border-radius: 15px;
+  border: 3px solid var(--yellow);
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+}
+
+#rock-paper-scissors-dialog .rules-container ul {
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: #4B5563;
+  font-weight: bold;
+}
+
+#rock-paper-scissors-dialog .rules-container p {
+  margin: 10px 0;
+}
+
+#rock-paper-scissors-dialog .score-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+#rock-paper-scissors-dialog .score {
+  font-weight: 500;
+}
+
+#rock-paper-scissors-dialog .options-container h2{
+    text-align: center;
+}
+
+#rock-paper-scissors-dialog .options-container .btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+#rock-paper-scissors-dialog .results-container {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  text-align: center;
+}
+
+#rock-paper-scissors-dialog #winner-msg {
+  margin-top: 25px;
+}
+
+#rock-paper-scissors-dialog #reset-game-btn {
+  display: none;
+  margin: 20px auto;
+}

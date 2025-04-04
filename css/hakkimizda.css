@@ -1,0 +1,336 @@
+:root{
+    --card-bg: white;
+    --grey-text: #515A68;
+}
+
+[data-theme="dark"]{
+    --card-bg: #1F2937;
+    --grey-text: #9BA3AF;
+}
+
+body {
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.kapak {
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('../assets/resima.png') center/cover no-repeat;
+    color: white;
+    text-align: left;
+    padding: 180px 60px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.kapak-icerik{
+    width: 60%;
+}
+
+.kapak-icerik h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.kapak-icerik p{
+    line-height: 2rem;
+}
+
+.dugme {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4A90E2, #357ABD); 
+    border: none;
+    border-radius: 8px;
+    text-decoration: none; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dugme:hover {
+    background: linear-gradient(135deg, #357ABD, #2E5C99); 
+    transform: translateY(-2px); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ekip {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.ekip h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ekip-kapsayici {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ekip-uye {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 45%;
+}
+
+.ekip-uye img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-blue);
+    margin-bottom: 12px;
+}
+
+.ekip-uye h3 {
+    margin-bottom: 5px;
+}
+
+.ekip-uye .rol {
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#timeline-h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background: #ccc;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    width: 45%;
+    background: var(--card-bg);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-item.right {
+    margin-left: 55%;
+}
+
+.timeline-item.left {
+    margin-right: 55%;
+}
+
+.timeline-item h2 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.timeline-item p {
+    color: var(--grey-text);
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.iletisim {
+    background: linear-gradient(135deg, #274bf0, #1690f3);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin: 40px 20px;
+}
+
+.iletisim h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.iletisim .iletisim-dugme {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4A90E2;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.iletisim .iletisim-dugme:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/*See our projects*/
+.see-projects-section{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 160px 0;
+}
+
+.see-projects-section img{
+    width: 40%;
+    border-radius: 8px;
+}
+
+.what-we-did{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.what-we-did h2{
+    font-size: 2rem;
+}
+
+.what-we-did a{
+    padding: 8px 12px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    display: inline-block;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--text-color);
+}
+
+.what-we-did a:hover{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 900px) {
+    .kapak{
+        padding: 180px 20px;
+    }
+
+    .kapak-icerik{
+        width: 80%;
+    }
+
+    .kapak-icerik h1{
+        font-size: 2.5rem;
+    }
+
+    .timeline-container{
+        padding-top: 0;
+    }
+
+    .timeline-container::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 95%;
+        margin-left: 25px;
+    }
+    
+    .timeline-item.right,
+    .timeline-item.left {
+        margin: 20px 0 20px 25px;
+    }
+
+    .see-projects-section{
+        padding: 0 20px;
+        gap: 1.5rem;
+        margin: 120px 0;
+    }
+
+    .see-projects-section img{
+        width: 50%;
+    }
+
+    .what-we-did a{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .kapak{
+        padding: 90px 20px;
+    }
+
+    .kapak-icerik{
+        width: 95%;
+    }
+
+    .kapak-icerik h1{
+        font-size: 1.5rem;
+    }
+
+    .kapak-icerik p{
+        font-size: 0.8rem;
+    }
+
+    .ekip{
+        padding: 50px 8px;
+    }
+
+    .ekip-uye{
+        width: 85%;
+    }
+
+    .timeline-item {
+        width: 90%;
+    }
+
+    .see-projects-section{
+        flex-direction: column;
+    }
+
+    .see-projects-section img{
+        width: 95%;
+    }
+
+    .iletisim h2 {
+        font-size: 1.2rem;
+    }
+
+    .iletisim .iletisim-dugme{
+        font-size: 0.75rem;
+        padding: 10px 20px;
+    }
+}

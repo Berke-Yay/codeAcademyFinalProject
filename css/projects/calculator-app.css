@@ -1,0 +1,18 @@
+/*Calculator App*/
+#calculator-app-dialog #calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+}
+
+#calculator-app-dialog #normal-layout, #trig-layout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#calculator-app-dialog #num2 {
+    display: inline-block;
+}

@@ -1,0 +1,273 @@
+:root{
+    --card-bg: white;
+}
+
+[data-theme="dark"]{
+    --card-bg: #1F2937;
+}
+
+.iletisim-hero {
+    background:linear-gradient(rgba(0, 0, 0, 0.5)), url('../assets/iletisim1.jpg') center no-repeat;
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.iletisim-hero h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 60px;
+    padding-top: 20vh;
+    padding-bottom: 20px;
+}
+
+.iletisim-hero p {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.baslik {
+    text-align: center;
+    padding-top: 200px;
+    color: var(--dark-blue);
+    font-style: oblique;
+}
+
+.cizgi {
+    display: flex;
+    justify-self: center;
+    width: 20rem;
+    border: 2px solid var(--dark-blue);
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.form-alani {
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    color: black;
+    background-color: white;
+    border: 2px solid rgb(165, 165, 165);
+}
+
+textarea {
+    height: 80px;
+}
+
+.form-alani button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #6c8bad;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+    user-select: none;
+}
+.form-alani button:hover {
+    background-color: #7e8e9b;
+}
+
+.form-kapsayici {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    gap: 100px;
+    margin-top: 20px;
+    background-color: var(--bg-colors);
+    padding: 20px;
+}
+
+
+
+.form-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: white;
+}
+
+.bizekatilin {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.linkler {
+    width: 350px;
+    text-align: center;
+    padding-top: 20px;
+    border: 2px gray solid;
+    border-radius: 15px;
+}
+
+.linkler h2 {
+    color: #2b5ca5;
+    padding: 10px;
+    font-style: oblique;
+}
+
+.linkler p {
+    color: var(--text-color);
+    padding: 15px;
+}
+
+.linkler i {
+    color: #4282a5;
+    padding-top: 10px;
+    font-size: x-large;
+}
+
+.linkler i:hover {
+    color: #1e3557;
+}
+
+.sosyalmedya {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.form-kart {
+    background-color: #203a53;
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-kart input {
+    border-color: rgb(165, 165, 165);
+    width: 80%;
+
+}
+
+.form-kart button {
+    width: 70%;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    background-color: #6c8bad;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+    user-select: none;
+}
+.form-kart button:hover{
+    background-color: #7e8e9b;
+
+}
+.form-kart h3 {
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    font-style: oblique;
+    padding: 15px;
+}
+
+.form-kart p {
+    color: rgba(255, 255, 255, 0.904);
+    padding: 10px;
+}
+
+
+
+.bilgi-kartlari {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+.kart {
+    background: var(--card-bg);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.kart p {
+    color: var(--text-color);
+    
+}
+
+.kart i {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px){
+    .baslik{
+        padding-top: 100px;
+    }
+
+    .form-kapsayici{
+        margin-top: 20px;
+    }
+
+    .bizekatilin{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .iletisim-hero h1{
+        font-size: 2rem;
+    }
+
+    .iletisim-hero p{
+        font-size: 0.8rem;
+    }
+
+    .form-kapsayici{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-alani {
+        padding: 8px;
+        border-radius: 10px;
+        width: 95%;
+    }
+
+    .form-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bizekatilin{
+        flex-direction: column;
+        align-items: center;
+    }
+}

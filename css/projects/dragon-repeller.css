@@ -1,0 +1,42 @@
+/*Dragon Repeller*/
+#dragon-repeller-dialog #text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+    }
+    
+#dragon-repeller-dialog #game {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0 auto 0px;
+    padding: 10px;
+}
+
+#dragon-repeller-dialog #controls,
+#dragon-repeller-dialog #stats {
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #0a0a23;
+}
+
+#dragon-repeller-dialog #monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+}
+
+#dragon-repeller-dialog .stat {
+    padding-right: 10px;
+}
+    
+#dragon-repeller-dialog #game button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+}
